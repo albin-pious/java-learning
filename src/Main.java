@@ -18,6 +18,10 @@ public class Main {
         long num5 = num4;
         long num6=1000000;
         int num7=(int)num6;
+
+//        constant
+        final double pi;
+        pi = 3.1;
     }
 }
 

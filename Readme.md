@@ -42,3 +42,21 @@ This happens when:
 ```java
 double myDouble = 9.99;
 int myInt = myDouble; // Compilation error: possible lossy conversion from double to int
+
+```
+
+# Java Constants
+
+In Java, **constants** are variables whose **value cannot be changed once assigned**.
+
+---
+
+## Declaring Constants
+
+To declare a constant in Java, use the `final` keyword along with appropriate access modifiers like `static`.
+
+### Syntax:
+
+```java
+final datatype CONSTANT_NAME = value;
+
