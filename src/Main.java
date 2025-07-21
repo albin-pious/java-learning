@@ -12,6 +12,12 @@ public class Main {
         boolean status = true;
         String str = "I love Java";
         System.out.println("string is "+str);
+
+//        typecasting
+        int num4 = 45;
+        long num5 = num4;
+        long num6=1000000;
+        int num7=(int)num6;
     }
 }
 
