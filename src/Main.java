@@ -1,5 +1,5 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.print("I'm a programmer");
@@ -22,6 +22,19 @@ public class Main {
 //        constant
         final double pi;
         pi = 3.1;
+
+//        Reading Input
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        System.out.println("Entered values is "+x);
+        System.out.println(x*x);
+        int byteVal = sc.nextByte();
+        System.out.println("byte value is "+byteVal);
+        String word = sc.next();
+        System.out.println(word);
+        String word2 = sc.nextLine();
+        System.out.println("word s i "+word2);
+        char ca = sc.next().charAt(0);
     }
 }
 

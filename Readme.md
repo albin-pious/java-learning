@@ -57,6 +57,73 @@ To declare a constant in Java, use the `final` keyword along with appropriate ac
 
 ### Syntax:
 
-```java
-final datatype CONSTANT_NAME = value;
+```
+java final datatype CONSTANT_NAME = value;
+```
 
+
+# Java: Reading Input Using `Scanner`
+
+In Java, the `Scanner` class (from `java.util`) is commonly used to read input from the user via the keyboard.
+
+---
+
+## Import and Setup
+
+```java
+Scanner sc = new Scanner(System.in);
+```
+* Creates a Scanner object named sc.
+* System.in refers to standard input (keyboard).
+## Read an Integer
+```
+int x = sc.nextInt();
+```
+
+* Reads an int input from the user and stores it in variable x.
+
+```
+System.out.println("Entered value is " + x);
+System.out.println(x * x);
+```
+
+* Prints the entered value.
+* Prints the square of the entered value (x * x).
+
+## Read a Byte
+```
+int byteVal = sc.nextByte();
+System.out.println("byte value is " + byteVal);
+```
+* Reads a byte value from input and stores it in byteVal.
+* Byte is a smaller data type than int.
+
+## Read a Single Word (No Spaces)
+```
+String word = sc.next();
+System.out.println(word);
+```
+* Reads a single word (stops at whitespace).
+* Example: input Hello World → word = "Hello"
+
+## Read a Full Line (Including Spaces)
+```
+String word2 = sc.nextLine();
+System.out.println("word s i " + word2);
+```
+* Reads a whole line including spaces.
+* Important: If used after next(), nextInt(), etc., you may get a blank line due to leftover newline characters.
+* To fix, add an extra sc.nextLine(); before this line when needed.
+
+## Read a Single Character
+```
+char ca = sc.next().charAt(0);
+```
+* Reads the first character of the next word.
+* Example: input Hello → ca = 'H'
+
+## Close the Scanner (Good Practice)
+```
+sc.close();
+```
+* Always close the scanner when done to free system resources.
