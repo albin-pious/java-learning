@@ -127,3 +127,41 @@ char ca = sc.next().charAt(0);
 sc.close();
 ```
 * Always close the scanner when done to free system resources.
+
+# Arithmetic Operations in Java
+
+This project demonstrates basic arithmetic operations in Java, including addition, subtraction, division, multiplication, and modulo operations.
+
+## Code Overview
+
+The provided Java code performs the following arithmetic operations:
+
+- **Addition**: Adds two integers (`a1 + b`).
+- **Subtraction**: Subtracts one integer from another (`a2 - b2`).
+- **Division**: Performs integer and floating-point division (`a2 / b2` and `a2 / (float)b2`).
+- **Multiplication**: Multiplies two integers (`a2 * b2`).
+- **Modulo**: Computes the remainder of division (`a2 % b2`).
+
+## Code Snippet
+
+```
+// Addition
+int a1 = 10;
+int b = 20;
+System.out.println(a1 + b); // Output: 30
+
+// Subtraction
+int a2 = 20;
+int b2 = 3;
+System.out.println(a2 - b2); // Output: 17
+
+// Division
+System.out.println(a2 / b2); // Output: 6 (integer division)
+System.out.println(a2 / (float)b2); // Output: 6.6666665 (floating-point division)
+
+// Multiplication
+System.out.println(a2 * b2); // Output: 60
+
+// Modulo Operator - Remainder
+System.out.println(a2 % b2); // Output: 2
+```

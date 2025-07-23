@@ -6,6 +6,6 @@ public class Calculator {
         float r = sc.nextInt();
         int t = sc.nextInt();
         double pi = (p*r*t)/100;
-        System.out.println("simple interest caluculatd successfully. "+pi);
+        System.out.println("simple interest find successfully. "+pi);
     }
 }

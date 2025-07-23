@@ -35,6 +35,23 @@ public class Main {
         String word2 = sc.nextLine();
         System.out.println("word s i "+word2);
         char ca = sc.next().charAt(0);
+
+//        Arithematic operator
+//        Addition
+        int a1 = 10;
+        int b = 20;
+        System.out.println(a1+b);
+//        Substraction
+        int a2 = 20;
+        int b2 = 3;
+        System.out.println(a2-b2);
+//        Division
+        System.out.println(a2/b2);
+        System.out.println(a2/(float)b2);
+//        Multiplication
+        System.out.println(a2*b2);
+//        Modulo Operator - Remainder
+        System.out.println((a2%b2));
     }
 }
 
