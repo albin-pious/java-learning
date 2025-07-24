@@ -52,6 +52,21 @@ public class Main {
         System.out.println(a2*b2);
 //        Modulo Operator - Remainder
         System.out.println((a2%b2));
+
+//        Relational Operators
+        System.out.println(a2==b2);
+        System.out.println(a2>b2);
+        System.out.println(a2<b2);
+        System.out.println(a2>=b2);
+        System.out.println(a2<=b2);
+        System.out.println(a2!=b2);
+
+//        Arithematic vs Equality operator
+//        Arithematic operator assign a value to a variable
+        int b4=50;
+//        Equality operator check the equality btw two values
+        System.out.println(a2==b4);
+
     }
 }
 

@@ -165,3 +165,42 @@ System.out.println(a2 * b2); // Output: 60
 // Modulo Operator - Remainder
 System.out.println(a2 % b2); // Output: 2
 ```
+# Relational and Equality Operators in Java
+
+This project demonstrates the use of relational and equality operators in Java, comparing two integer values and illustrating the difference between arithmetic assignment and equality operators.
+
+## Code Overview
+
+The provided Java code performs the following operations:
+
+- **Relational Operators**: Compares two integers (`a2` and `b2`) using:
+   - Equal to (`==`)
+   - Greater than (`>`)
+   - Less than (`<`)
+   - Greater than or equal to (`>=`)
+   - Less than or equal to (`<=`)
+   - Not equal to (`!=`)
+- **Arithmetic vs. Equality Operator**:
+   - Arithmetic operator (`=`) assigns a value to a variable.
+   - Equality operator (`==`) checks if two values are equal.
+
+## Code Snippet
+
+```
+// Relational Operators
+int a2 = 20;
+int b2 = 3;
+System.out.println(a2 == b2); // Output: false
+System.out.println(a2 > b2);  // Output: true
+System.out.println(a2 < b2);  // Output: false
+System.out.println(a2 >= b2); // Output: true
+System.out.println(a2 <= b2); // Output: false
+System.out.println(a2 != b2); // Output: true
+
+// Arithmetic vs Equality Operator
+// Arithmetic operator assigns a value to a variable
+int b4 = 50;
+// Equality operator checks the equality between two values
+System.out.println(a2 == b4); // Output: false
+
+```
