@@ -227,3 +227,70 @@ if (x > 0) {
     System.out.println("Neutral number");
 }
 ```
+# Switch Statements in Java
+
+This project demonstrates the use of traditional and enhanced `switch` statements in Java for conditional branching, allowing the program to execute different blocks of code based on the value of a variable.
+
+## Code Overview
+
+The provided Java code includes three examples of `switch` statements:
+1. **Traditional Switch Statement**: Maps an integer `month` to a day of the week, with a `default` case for invalid inputs.
+2. **Enhanced Switch Statement**: Uses the arrow syntax (`->`) introduced in Java 12+ for concise case handling.
+3. **Switch with Multiple Case Labels**: Evaluates a character `cha` to determine if it is a vowel or consonant, using multiple case labels for a single outcome.
+
+## Code Snippet
+
+```
+// Traditional Switch Statement
+int month; // Assume month is initialized with a value
+switch (month) {
+    case 1:
+        System.out.println("Sun");
+        break;
+    case 2:
+        System.out.println("Mon");
+        break;
+    case 3:
+        System.out.println("Tue");
+        break;
+    case 4:
+        System.out.println("Wed");
+        break;
+    case 5:
+        System.out.println("Thu");
+        break;
+    case 6:
+        System.out.println("Fri");
+        break;
+    case 7:
+        System.out.println("Sat");
+        break;
+    default:
+        System.out.println("Invalid Date");
+}
+
+// Enhanced Switch Statement
+switch (month) {
+    case 1 -> {
+        System.out.println("I'm enhanced switch case");
+    }
+    case 2 -> {
+        System.out.println("happy");
+    }
+    case 3 -> {
+        System.out.println("coding");
+    }
+}
+
+// Switch with Multiple Case Labels
+Scanner sc = new Scanner(System.in);
+char cha = sc.next().charAt(0);
+switch (cha) {
+    case 'a':
+    case 'e':
+        System.out.println("Vowels");
+        break;
+    default: 
+        System.out.println("Consonant");
+}
+```

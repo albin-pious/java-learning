@@ -79,6 +79,57 @@ public class Main {
         } else {
             System.out.println("Neutral number");
         }
+        int month = sc.nextInt();
+//        Switch Statement
+        switch (month){
+            case 1:
+                System.out.println("Sun");
+                break;
+            case 2:
+                System.out.println("Mon");
+                break;
+            case 3:
+                System.out.println("Tue");
+                break;
+            case 4:
+                System.out.println("Wed");
+                break;
+            case 5:
+                System.out.println("Thu");
+                break;
+            case 6:
+                System.out.println("Fri");
+                break;
+            case 7:
+                System.out.println("Sat");
+                break;
+            default:
+                System.out.println("Invalid Date");
+        }
+
+//        enhanced switch
+        switch (month){
+            case 1 -> {
+                System.out.println("I'm enhanced switch case");
+            }
+            case 2 -> {
+                System.out.println("happy");
+            }
+            case 3 -> {
+                System.out.println("coding");
+            }
+        }
+
+        char cha = sc.next().charAt(0);
+        switch (cha){
+            case 'a':
+            case 'b':
+                System.out.println("Vowels");
+                break;
+            default:
+                System.out.println("Consonant");
+
+        }
 
     }
 }
