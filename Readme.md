@@ -204,3 +204,26 @@ int b4 = 50;
 System.out.println(a2 == b4); // Output: false
 
 ```
+
+# Branching with If-Else in Java
+
+This project demonstrates the use of `if-else` statements in Java for conditional branching, allowing the program to make decisions based on whether a condition evaluates to true or false.
+
+## Code Overview
+
+The provided Java code uses an `if-else` structure to check the value of a variable `x` and determine whether it is positive, negative, or neutral (zero). The `if` statement evaluates a boolean condition, and optional `else if` and `else` clauses handle alternative cases.
+
+## Code Snippet
+
+```
+// The 'if' statement is used to test a condition. It checks boolean condition: true or false.
+// It can optionally have an else if and an else statement attached with it as well.
+int x; // Assume x is initialized with a value
+if (x > 0) {
+    System.out.println("Positive number");
+} else if (x < 0) {
+    System.out.println("Negative number");
+} else {
+    System.out.println("Neutral number");
+}
+```

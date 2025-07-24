@@ -67,6 +67,19 @@ public class Main {
 //        Equality operator check the equality btw two values
         System.out.println(a2==b4);
 
+//        Branching - if else
+        /*
+        * The 'if' statement is used to test a condition. It checks boolean condition: true to false.
+        * It can optionally have an else if and an else statement attached with it as well.
+         */
+        if(x>0){
+            System.out.println("Positive number");
+        } else if(x<0){
+            System.out.println("Negative number");
+        } else {
+            System.out.println("Neutral number");
+        }
+
     }
 }
 
