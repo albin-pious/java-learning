@@ -294,3 +294,23 @@ switch (cha) {
         System.out.println("Consonant");
 }
 ```
+# Ternary Operator in Java
+
+This project demonstrates the use of the ternary operator in Java, which provides a concise way to perform conditional evaluations as an alternative to an `if-else` statement.
+
+## Code Overview
+
+The provided Java code uses the ternary operator to evaluate whether an integer `num` is even or odd. The ternary operator (`?:`) checks a condition and returns one of two expressions based on whether the condition is true or false.
+
+## Code Snippet
+
+```
+/**
+ * Ternary operator is a condensed form of if-else statement which evaluates a condition 
+ * and executes the code based on the evaluated condition.
+ * result = (condition) ? expression1 : expression2;
+ */
+int num; // Assume num is initialized with a value
+String result = num % 2 == 0 ? "even" : "odd";
+System.out.println(result);
+```

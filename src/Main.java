@@ -131,6 +131,14 @@ public class Main {
 
         }
 
+//        Ternary Operator
+        /**
+         * Ternary operator is condensed form of if-else statement which evalutes a condition and executes the code based on the evaluated condition.
+         * result = (condition) ? expression1: expression2;
+         */
+        String result = num % 2 == 0 ? "even" : "odd";
+
+
     }
 }
 
