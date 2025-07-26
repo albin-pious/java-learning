@@ -314,3 +314,36 @@ int num; // Assume num is initialized with a value
 String result = num % 2 == 0 ? "even" : "odd";
 System.out.println(result);
 ```
+
+# Logical Operators in Java
+
+This project demonstrates the use of logical operators in Java, including logical AND (`&&`), logical OR (`||`), and logical NOT (`!`), to perform conditional evaluations.
+
+## Code Overview
+
+The provided Java code showcases three logical operators:
+1. **Logical AND (`&&`)**: Checks if a person is eligible to vote based on age and citizenship.
+2. **Logical OR (`||`)**: Determines if a person could be a developer based on their knowledge of Java or Python.
+3. **Logical NOT (`!`)**: Inverts a boolean value to control the execution of a conditional statement.
+
+## Code Snippet
+
+```
+// Logical AND
+int age = 20;
+String citizenship = "Indian";
+String ans1 = age >= 18 && citizenship == "Indian" ? "You can vote" : "You can't vote";
+System.out.println(ans1);
+
+// Logical OR
+String ab = "Java";
+String ac = "Python";
+String result2 = ab == "Java" || ac == "Python" ? "Would be developer" : "Won't be developer";
+System.out.println(result2);
+
+// Logical NOT
+boolean dd = true;
+if (!dd) {
+    System.out.println("hai");
+}
+```

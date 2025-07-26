@@ -138,7 +138,19 @@ public class Main {
          */
         String result = num % 2 == 0 ? "even" : "odd";
 
-
+//        Logical AND
+        int age = 20;
+        String citizenship = "Indian";
+        String ans1 = age >= 18 && citizenship == "Indian" ? "You can vote" : "You can't vote";
+//        Logical OR
+        String ab = "Java";
+        String ac = "Python";
+        String result2 = ab == "Java" || ac == "Python" ? "Would be developer" : "Won't be developer";
+//        Logical NOT
+        boolean dd = true;
+        if(!dd){
+            System.out.println("hai");
+        }
     }
 }
 
