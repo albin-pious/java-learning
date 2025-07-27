@@ -151,6 +151,18 @@ public class Main {
         if(!dd){
             System.out.println("hai");
         }
+
+        /*
+        For loop
+        Java for loop is used to execute a block a code a certain number of times. It is recommended to use for loop when the exact number off iterations is known beforehand.
+        The syntax of for loop is:
+            for(initialisation;condition;update){
+                body of the loop
+            }
+         */
+        for(int j=1; j<=10; j++){
+            System.out.println(j+"\n");
+        }
     }
 }
 

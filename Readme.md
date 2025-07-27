@@ -347,3 +347,30 @@ if (!dd) {
     System.out.println("hai");
 }
 ```
+# For Loop in Java
+
+This project demonstrates the use of the `for` loop in Java to execute a block of code a specific number of times, ideal when the number of iterations is known in advance.
+
+## Code Overview
+
+The provided Java code uses a `for` loop to print numbers from 1 to 10. The loop consists of:
+- **Initialization**: Setting the starting value of the loop variable.
+- **Condition**: Checking whether the loop should continue.
+- **Update**: Modifying the loop variable after each iteration.
+
+## Code Snippet
+
+```
+/*
+ * For loop
+ * Java for loop is used to execute a block of code a certain number of times.
+ * It is recommended to use for loop when the exact number of iterations is known beforehand.
+ * The syntax of for loop is:
+ *     for(initialisation; condition; update) {
+ *         body of the loop
+ *     }
+ */
+for (int i = 1; i <= 10; i++) {
+    System.out.println(i + "\n");
+}
+```
