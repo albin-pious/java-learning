@@ -374,3 +374,29 @@ for (int i = 1; i <= 10; i++) {
     System.out.println(i + "\n");
 }
 ```
+# While Loop in Java
+
+This project demonstrates the use of the `while` loop in Java to execute a block of code repeatedly until a specified condition is no longer true.
+
+## Code Overview
+
+The provided Java code uses a `while` loop to print numbers from 1 to 10. The loop continues as long as the condition `i <= 10` is met, and the loop variable `i` is incremented inside the loop body.
+
+## Code Snippet
+
+```
+/*
+ * While loops
+ * The Java while loop is used to execute a specific block of code until a certain condition is met.
+ * The syntax of the while loop is:
+ *
+ * while (condition) {
+ *     body of loop
+ * }
+ */
+int i = 1;
+while (i <= 10) {
+    System.out.println("%d" + i);
+    i++;
+}
+```

@@ -163,6 +163,21 @@ public class Main {
         for(int j=1; j<=10; j++){
             System.out.println(j+"\n");
         }
+
+        /*
+         *  While loops
+         * The Java while loops is used to execute a specific block of code until a certain condition is met.
+         * The syntax of the while loop is:
+         *
+         * while (condition) {
+         *  body of loop
+         * }
+         */
+        int i=1;
+        while (i<=10){
+            System.out.println("%d"+i);
+            i++;
+        }
     }
 }
 
