@@ -178,6 +178,20 @@ public class Main {
             System.out.println("%d"+i);
             i++;
         }
+
+        /*
+            do-while loop
+            The do-while loop is very similar to the while loop. However the body of do-while loop is executed once before
+            the condition is checked.
+            The syntax of the do while loop is:
+            do{
+                body of the loop
+            } while (condition);
+         */
+        do{
+            System.out.println("hi");
+            i++;
+        }while (i<5);
     }
 }
 

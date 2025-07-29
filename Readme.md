@@ -400,3 +400,30 @@ while (i <= 10) {
     i++;
 }
 ```
+
+# Do-While Loop in Java
+
+This project demonstrates the use of the `do-while` loop in Java, which executes a block of code at least once before checking a condition to determine whether to continue looping.
+
+## Code Overview
+
+The provided Java code uses a `do-while` loop to print "hi" and increment a variable `i` until `i` is no longer less than 5. Unlike a `while` loop, the `do-while` loop guarantees that the loop body executes at least once, regardless of the condition.
+
+## Code Snippet
+
+```
+/*
+ * do-while loop
+ * The do-while loop is very similar to the while loop. However, the body of do-while loop is executed once before
+ * the condition is checked.
+ * The syntax of the do-while loop is:
+ * do {
+ *     body of the loop
+ * } while (condition);
+ */
+int i = 1; // Assume i is initialized
+do {
+    System.out.println("hi");
+    i++;
+} while (i < 5);
+```
