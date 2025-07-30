@@ -427,3 +427,25 @@ do {
     i++;
 } while (i < 5);
 ```
+
+# For-Each Loop in Java
+
+This project demonstrates the use of the for-each loop (also known as the enhanced for loop) in Java, introduced in Java 5, for iterating over elements in an iterable, such as an array or collection.
+
+## Code Overview
+
+The provided Java code uses a for-each loop to iterate over an integer array `newArr` and print each element. The for-each loop simplifies traversal by directly accessing each element without needing an index variable.
+
+## Code Snippet
+
+```
+/*
+ * The for-each loop in Java, also called as 'enhanced for loop', was introduced in Java 5. It is one of the
+ * alternative approaches that are used for traversing the iterable. As the name ensures, it is mainly used to
+ * iterate over each of the iterable elements one by one.
+ */
+int[] newArr = {5, 3, 2, 4, 1};
+for (int k : newArr) {
+    System.out.println(k);
+}
+```

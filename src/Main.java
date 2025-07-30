@@ -192,6 +192,37 @@ public class Main {
             System.out.println("hi");
             i++;
         }while (i<5);
+
+//        Arrays
+        /*
+            Java array is a data structure that stores data of the same type in a sequential manner. An array takes a
+            contiguous section of the memory.
+         */
+
+//        Array with initial values (size determined automatically)
+        int[] arr1 = {4, 8, 9, 1, 0};
+//        Empty array with size = 5. Initially all values are 0.
+        int[] arr2 = new int[5];
+//        Alternate declarations
+        int []arr3 = new int[5];
+        int arr4[] = new int[5];
+        int [] arr5 = new int[5];
+
+
+        for(int j = 0; j < arr2.length; j++) {
+            System.out.println("arr2[" + j + "] = " + arr2[j]);
+        }
+
+//        for-each loop
+        /*
+            The for each loop in Java, also called as 'enhanced for loop', was introduced in Java 5. It is one of the
+            alternative approaches that are used for traversing the iterable. As the name suggests, it is mainly used to
+            iterate over each of the iterable elements one by one.
+         */
+        int[] newArr = {5, 3, 2, 4, 1};
+        for (int k:newArr){
+            System.out.println(k);
+        }
     }
 }
 
