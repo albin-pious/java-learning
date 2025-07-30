@@ -449,3 +449,22 @@ for (int k : newArr) {
     System.out.println(k);
 }
 ```
+# String Class in Java
+
+This project demonstrates the basic usage of the `String` class in Java, which represents immutable character strings.
+
+## Code Overview
+
+The provided Java code creates a `String` object, prints its value, and displays its length using the `length()` method. The `String` class is used to handle string literals, such as `"hello"`, which are immutable in Java, meaning their content cannot be changed once created.
+
+## Code Snippet
+
+```
+/*
+ * The String class represents character strings. All string literals in Java programs, such as "abc", are
+ * implemented as instances of this class. Strings in Java are immutable.
+ */
+String s = "hello";
+System.out.println(s);
+System.out.println(s.length());
+```

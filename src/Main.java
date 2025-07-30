@@ -223,6 +223,15 @@ public class Main {
         for (int k:newArr){
             System.out.println(k);
         }
+
+//        String class
+        /*
+            The String class represents character strings. All string literals in Java programs, such as "abc", are
+            implemented as instances of this class. String in Java are immutable.
+         */
+        String s = "hello";
+        System.out.println(s);
+        System.out.println(s.length());
     }
 }
 
