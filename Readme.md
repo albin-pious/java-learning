@@ -468,3 +468,33 @@ String s = "hello";
 System.out.println(s);
 System.out.println(s.length());
 ```
+
+# Strings Using `new` Keyword in Java
+
+This project demonstrates the creation of strings in Java using the `new` keyword and compares strings using both the `==` operator and the `equals()` method to highlight the difference between string literals and objects created with `new`.
+
+## Code Overview
+
+The provided Java code shows two ways to create strings:
+- **String Literal**: Stored in the string pool for memory efficiency.
+- **Using `new` Keyword**: Creates a new `String` object on the heap, outside the string pool.
+  The code compares these strings using `==` (reference comparison) and `equals()` (content comparison) to illustrate their behavior.
+
+## Code Snippet
+
+```
+/*
+ * We can also create new strings using the new keyword. These strings do not reside in the String pool,
+ * instead they are created and stored in the heap memory.
+ */
+// String Pool
+String s1 = "abc"; // Stored in the string pool
+String s2 = new String("abc"); // New object in heap memory
+
+if (s1 == s2) {
+    System.out.println("This will not work");
+}
+if (s1.equals(s2)) {
+    System.out.println("This will work");
+}
+```

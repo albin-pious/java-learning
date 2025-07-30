@@ -232,6 +232,22 @@ public class Main {
         String s = "hello";
         System.out.println(s);
         System.out.println(s.length());
+
+//        Strings using new
+        /*
+            We can also create new strings using the new keyword. These strings do not reside in the String pool,
+            instead they are created and stored in the heap memory.
+         */
+//        String Pool
+        String s1 = "abc";
+        String s2 = new String("abc");
+
+        if(s1 == s2){
+            System.out.println("This will not work");
+        }
+        if(s1.equals(s2)){
+            System.out.println("This will work");
+        }
     }
 }
 
