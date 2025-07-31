@@ -248,6 +248,21 @@ public class Main {
         if(s1.equals(s2)){
             System.out.println("This will work");
         }
+
+//        String class methods
+        /*
+            String class offers several methods out of the box. We will be looking at some of them in this section.
+         */
+//        charAt: charAt method allows us to access the character at the specified index. (eg: s2.charAt(2);
+//        length: The length() method returns the length of the string. (str2.length);
+//        indexOf: indexOf methods returns the index of the first occurrence of the specified char or string in the given string. If it is present, then if returns -1. eg: s2.indexOf('w'), s2.indexOf('ll');
+//        equals: Equals method is used to compare whether the two strings contain the same sequence of characters. eg: s2.equals(s1);
+//        contains: Returns true if and only if this string contains the specified sequence of char values. eg: s2.contains("11");
+//        loLowerCase, toUpperCase: Returns new strings after changing the case. Original string remains intact. eg: s2.toLowerCase(), s2.toUpperCase()
+//        String s2 = "I love Programming"; String s3 = s2.replace(target: "Programming", replacement: "Java");
+//        substring: Returns a string that is a substring of this string. The substring begins at the specified beginIndex and extends to the character at index endIndex -1. Thus the length of the substring is endIndex-beginIndex. eg: String sub2 = str.substring(2,6);
+//        concatenation: Concatenation is the process of appending one string to the end of another string. Java strings can be added by using the '+' operator. When a string is concatenated with primitive types, they are automatically typecasted to strings. When a string is concatenated with non-primitive types, the toString() on that object is called automatically. String s3 = s1 + s2;
+
     }
 }
 

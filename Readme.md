@@ -498,3 +498,62 @@ if (s1.equals(s2)) {
     System.out.println("This will work");
 }
 ```
+
+# String Class Methods in Java
+
+This project demonstrates the usage of various methods provided by the `String` class in Java for manipulating and analyzing strings.
+
+## Code Overview
+
+The provided Java code illustrates several commonly used `String` class methods:
+- **charAt(int index)**: Retrieves the character at a specified index.
+- **length()**: Returns the length of the string.
+- **indexOf(char/String)**: Finds the index of the first occurrence of a character or substring, or returns -1 if not found.
+- **equals(Object)**: Compares two strings for content equality.
+- **contains(CharSequence)**: Checks if a string contains a specified sequence of characters.
+- **toLowerCase() / toUpperCase()**: Converts the string to lowercase or uppercase, returning a new string.
+- **replace(CharSequence, CharSequence)**: Replaces occurrences of a target substring with a replacement string.
+- **substring(int beginIndex, int endIndex)**: Extracts a substring from the specified start index to the end index (exclusive).
+- **Concatenation (+)**: Combines strings or strings with other data types using the `+` operator, with automatic type conversion for primitives and `toString()` for objects.
+
+## Code Snippet
+
+```
+/*
+ * String class offers several methods out of the box. We will be looking at some of them in this section.
+ */
+String s1 = "abc";
+String s2 = "I love Programming";
+
+// charAt: Access character at specified index
+System.out.println(s2.charAt(2)); // Output: l
+
+// length: Returns the length of the string
+System.out.println(s2.length()); // Output: 17
+
+// indexOf: Returns index of first occurrence of char or string, or -1 if not found
+System.out.println(s2.indexOf('w')); // Output: -1
+System.out.println(s2.indexOf("ll")); // Output: 3
+
+// equals: Compares two strings for content equality
+System.out.println(s2.equals(s1)); // Output: false
+
+// contains: Checks if string contains specified sequence
+System.out.println(s2.contains("ll")); // Output: true
+
+// toLowerCase, toUpperCase: Converts case, returns new string
+System.out.println(s2.toLowerCase()); // Output: i love programming
+System.out.println(s2.toUpperCase()); // Output: I LOVE PROGRAMMING
+
+// replace: Replaces target substring with replacement
+String s3 = s2.replace("Programming", "Java");
+System.out.println(s3); // Output: I love Java
+
+// substring: Extracts substring from beginIndex to endIndex-1
+String sub2 = s2.substring(2, 6);
+System.out.println(sub2); // Output: love
+
+// concatenation: Combines strings using + operator
+String s4 = s1 + s2;
+System.out.println(s4); // Output: abcI love Programming
+```
