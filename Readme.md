@@ -589,3 +589,35 @@ System.out.println(sb); // Output: I really Programming, think to solve. Cool to
 sb.delete(7, 19);
 System.out.println(sb); // Output: I really, think to solve. Cool to code
 ```
+# Strings and Character Arrays in Java
+
+This project demonstrates the relationship and differences between `String` objects and character arrays in Java, showcasing how to convert between them and handle sequences of characters.
+
+## Code Overview
+
+The provided Java code illustrates the creation and conversion of strings and character arrays:
+- A `String` object is created using a string literal.
+- A character array is defined directly with individual characters.
+- A `String` is converted to a character array using `toCharArray()`.
+- A character array is converted to a `String` using the `String` constructor.
+
+`String` objects are immutable and provide built-in methods for manipulation, while character arrays are mutable but lack the rich functionality of the `String` class.
+
+## Code Snippet
+
+```
+/*
+ * Both Strings and character arrays allow us to store and handle sequences of characters. But they are
+ * different in some properties.
+ */
+String str1 = "hello";
+char[] str2 = {'h', 'e', 'l', 'l', 'o'};
+char[] str3 = str1.toCharArray();
+String str4 = new String(str2);
+
+// Example output
+System.out.println(str1); // Output: hello
+System.out.println(str2); // Output: [C@<hashcode> (array reference)
+System.out.println(str3); // Output: [C@<hashcode> (array reference)
+System.out.println(str4); // Output: hello
+```

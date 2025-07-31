@@ -271,6 +271,16 @@ public class Main {
         sb.insert(18, ", think to solve");
         sb.replace(2,6, "relly");
         sb.delete(7,19);
+
+//        Strings and char arrays
+        /*
+            Both Strings and character arrays allows us to store and handle sequences of characters. But they are
+            different in some properties.
+         */
+        String str1 = "hello";
+        char[] str2 = {'h','e','l','l','o'};
+        char[] str3 = str1.toCharArray();
+        String str4 = new String(str2);
     }
 }
 
