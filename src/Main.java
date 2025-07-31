@@ -262,7 +262,15 @@ public class Main {
 //        String s2 = "I love Programming"; String s3 = s2.replace(target: "Programming", replacement: "Java");
 //        substring: Returns a string that is a substring of this string. The substring begins at the specified beginIndex and extends to the character at index endIndex -1. Thus the length of the substring is endIndex-beginIndex. eg: String sub2 = str.substring(2,6);
 //        concatenation: Concatenation is the process of appending one string to the end of another string. Java strings can be added by using the '+' operator. When a string is concatenated with primitive types, they are automatically typecasted to strings. When a string is concatenated with non-primitive types, the toString() on that object is called automatically. String s3 = s1 + s2;
-
+//        StringBuilder
+        /*
+            Java StringBuilder class is used to create mutable
+         */
+        StringBuilder sb = new StringBuilder("I like Programming.");
+        sb.append("Cool to code");
+        sb.insert(18, ", think to solve");
+        sb.replace(2,6, "relly");
+        sb.delete(7,19);
     }
 }
 

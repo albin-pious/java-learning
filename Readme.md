@@ -557,3 +557,35 @@ System.out.println(sub2); // Output: love
 String s4 = s1 + s2;
 System.out.println(s4); // Output: abcI love Programming
 ```
+
+# StringBuilder in Java
+
+This project demonstrates the use of the `StringBuilder` class in Java, which provides a mutable alternative to the immutable `String` class for efficient string manipulation.
+
+## Code Overview
+
+The provided Java code showcases several `StringBuilder` methods:
+- **append(String)**: Adds a string to the end of the `StringBuilder` content.
+- **insert(int offset, String)**: Inserts a string at the specified index.
+- **replace(int start, int end, String)**: Replaces a substring from `start` to `end-1` with a new string.
+- **delete(int start, int end)**: Removes a substring from `start` to `end-1`.
+
+The `StringBuilder` class is mutable, meaning these operations modify the existing object rather than creating new ones, making it more efficient than `String` for repeated modifications.
+
+## Code Snippet
+
+```
+/*
+ * Java StringBuilder class is used to create mutable strings.
+ */
+StringBuilder sb = new StringBuilder("I like Programming.");
+System.out.println(sb); // Output: I like Programming.
+sb.append(" Cool to code");
+System.out.println(sb); // Output: I like Programming. Cool to code
+sb.insert(18, ", think to solve");
+System.out.println(sb); // Output: I like Programming, think to solve. Cool to code
+sb.replace(2, 6, "really");
+System.out.println(sb); // Output: I really Programming, think to solve. Cool to code
+sb.delete(7, 19);
+System.out.println(sb); // Output: I really, think to solve. Cool to code
+```
