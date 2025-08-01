@@ -621,3 +621,36 @@ System.out.println(str2); // Output: [C@<hashcode> (array reference)
 System.out.println(str3); // Output: [C@<hashcode> (array reference)
 System.out.println(str4); // Output: hello
 ```
+# Functions (Methods) in Java
+
+This project demonstrates the use of functions (also known as methods) in Java, which are reusable blocks of code that execute when called, allowing for modular and organized programming.
+
+## Code Overview
+
+The provided Java code defines a `static` method called `tea()` that prints the steps to make milk tea. The method is called from the main program to execute its logic. Functions in Java can accept parameters and return values, promoting code reuse and logical separation.
+
+## Code Snippet
+
+```java
+/*
+ * Java functions (also known as methods) are blocks of code that are only executed when they are called. We
+ * can pass values to methods, known as parameters, and return values from them as well. Benefits of
+ * functions/methods:
+ * - They allow us to divide our code in logical blocks.
+ * - They allow us to reuse code.
+ * Syntax:
+ * void function_name(data_type parameters) {
+ *     body of the function
+ * }
+ */
+public class TeaMaker {
+    public static void main(String[] args) {
+        tea();
+    }
+    static void tea() {
+        System.out.println("Boil water, tea leaves, and sugar");
+        System.out.println("Add milk and boil for a few minutes");
+        System.out.println("Serve the milk tea");
+    }
+}
+```

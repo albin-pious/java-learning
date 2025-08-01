@@ -281,6 +281,25 @@ public class Main {
         char[] str2 = {'h','e','l','l','o'};
         char[] str3 = str1.toCharArray();
         String str4 = new String(str2);
+
+//        Functions in Java
+        /*
+            Java functions (also known as methods) are blocks of code that are only executed whey they are called. We
+            can pass values to methods, known as parameters, and return values from them as well. Benefits of
+            functions/methods:
+            - They allow us to divide our code in logical blocks.
+            - They allow us to reuse code.
+            syntax:
+            void function_name(data_type parameters){
+                body of the function
+            }
+         */
+        tea();
+    }
+    static void tea(){
+        System.out.println("Boil water tea leaves and sugar");
+        System.out.println("Add milk and boil for a few minutes");
+        System.out.println("Serve the milk tea");
     }
 }
 
