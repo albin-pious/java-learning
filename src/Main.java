@@ -295,11 +295,32 @@ public class Main {
             }
          */
         tea();
+
+//        Parameters and Arguments
+        /*
+            Methods can accept values while being called. These values are stored in local variables known as parameters
+            and arguments.
+            A method can have multiples or none arguments
+            The data type of each argument must be defined in the function signature.
+         */
+        String name = "Peter Parker";
+        int age1 = 20;
+        String[] hobbies = {"Photography", "Fighting Crime"};
+        introduction(name, age1, hobbies);
     }
     static void tea(){
         System.out.println("Boil water tea leaves and sugar");
         System.out.println("Add milk and boil for a few minutes");
         System.out.println("Serve the milk tea");
+    }
+
+    static void introduction(String name, int age, String[] hobbies){
+        System.out.println("My name is " + name);
+        System.out.println("I am"+age +" years old");
+        System.out.println("My hobbies are: ");
+        for (String hobby: hobbies){
+            System.out.println("- "+ hobby);
+        }
     }
 }
 

@@ -654,3 +654,38 @@ public class TeaMaker {
     }
 }
 ```
+# Parameters and Arguments in Java
+
+This project demonstrates the use of parameters and arguments in Java methods, allowing methods to accept values when called and process them within their logic.
+
+## Code Overview
+
+The provided Java code defines a method `introduction` that accepts a `String` (name), an `int` (age), and a `String` array (hobbies) as parameters. These parameters are used to print a personalized introduction, including the person's name, age, and hobbies, which are iterated using a for-each loop. The method is called with corresponding arguments from the main program.
+
+## Code Snippet
+
+```java
+/*
+ * Methods can accept values while being called. These values are stored in local variables known as parameters
+ * and arguments.
+ * A method can have multiple or no arguments.
+ * The data type of each argument must be defined in the function signature.
+ */
+public class Introduction {
+    public static void main(String[] args) {
+        String name = "Peter Parker";
+        int age1 = 20;
+        String[] hobbies = {"Photography", "Fighting Crime"};
+        introduction(name, age1, hobbies);
+    }
+
+    static void introduction(String name, int age, String[] hobbies) {
+        System.out.println("My name is " + name);
+        System.out.println("I am " + age + " years old");
+        System.out.println("My hobbies are: ");
+        for (String hobby : hobbies) {
+            System.out.println("- " + hobby);
+        }
+    }
+}
+```
