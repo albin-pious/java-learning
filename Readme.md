@@ -689,3 +689,48 @@ public class Introduction {
     }
 }
 ```
+# Return Types in Java
+
+This project demonstrates the use of return types in Java methods, allowing methods to send values back to the caller. The return type must be specified in the method signature, and `void` is used when no value is returned.
+
+## Code Overview
+
+The provided Java code includes two methods with different return types:
+- **`square(int num)`**: Returns an `int` representing the square of the input number.
+- **`heroes()`**: Returns a `String` array containing a list of superhero names.
+  The main program calls these methods, stores their returned values, and prints them.
+
+## Code Snippet
+
+```java
+/*
+ * Java methods can optionally return some values back to the caller using the return statement.
+ * The data type of the value being returned must be specified in the method signature beforehand.
+ * In case no value needs to be returned, specify the return type as void.
+ * Example:
+ * int square(int num) {
+ *     return num * num;
+ * }
+ * The return type of the function is int. The function returns the square value of num.
+ */
+public class ReturnTypes {
+    public static void main(String[] args) {
+        int result3 = square(5);
+        System.out.println(result3);
+
+        String[] arr = heroes();
+        for (String hero : arr) {
+            System.out.println(hero);
+        }
+    }
+
+    static int square(int num) {
+        return num * num;
+    }
+
+    static String[] heroes() {
+        String[] superheroes = {"Iron Man", "Bat Man", "Thor"};
+        return superheroes;
+    }
+}
+```

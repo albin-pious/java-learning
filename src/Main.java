@@ -307,6 +307,23 @@ public class Main {
         int age1 = 20;
         String[] hobbies = {"Photography", "Fighting Crime"};
         introduction(name, age1, hobbies);
+
+//        Return Types
+        /*
+            - Java methods can optionally return some values back to the caller using the return statement.
+            - The data type of the value being returned must be specified in the method signature beforehand.
+            - In case no value needs to be returned, specify the return type as void.
+            int square(int num) {
+                return num * num;
+            }
+            The return type of the function is int. The function returns the square value of num.
+         */
+        int result3 = square(5);
+        System.out.println(result3);
+        String[] arr = heroes();
+        for (String hero : arr){
+            System.out.println(hero);
+        }
     }
     static void tea(){
         System.out.println("Boil water tea leaves and sugar");
@@ -321,6 +338,15 @@ public class Main {
         for (String hobby: hobbies){
             System.out.println("- "+ hobby);
         }
+    }
+
+    static int square(int num){
+        return num*num;
+    }
+
+    static String[] heroes(){
+        String[] superheroes = {"Iron Man", "Bat Man", "Thor"};
+        return superheroes;
     }
 }
 
