@@ -734,3 +734,38 @@ public class ReturnTypes {
     }
 }
 ```
+# Method Overloading in Java
+
+This project demonstrates method overloading in Java, where multiple methods share the same name but have different parameter lists, improving code readability and flexibility.
+
+## Code Overview
+
+The provided Java code defines two overloaded `add` methods:
+- One method accepts two `int` parameters and returns their sum.
+- Another method accepts two `String` parameters and concatenates them.
+  The main program calls both methods with appropriate arguments, showcasing how Java selects the correct method based on the parameter types.
+
+## Code Snippet
+
+```java
+/*
+ * Method overloading is the act of having multiple methods with the same name but different parameters.
+ * It increases the readability of the program.
+ */
+public class MethodOverloading {
+    public static void main(String[] args) {
+        add(30, 49);
+        add("I'm ", "Batman");
+    }
+
+    static int add(int a, int b) {
+        System.out.println("Integer arithmetic operations: ");
+        return a + b;
+    }
+
+    static String add(String a, String b) {
+        System.out.println("String arithmetic operations: ");
+        return a + b;
+    }
+}
+```

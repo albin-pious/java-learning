@@ -324,6 +324,14 @@ public class Main {
         for (String hero : arr){
             System.out.println(hero);
         }
+
+//        Method Overloading
+        /*
+            Method overloading is the act of having multiple methods having same name but different parameters.
+            It increases the readability of the program.
+         */
+        add(30,49);
+        add("I'm ", "Batman");
     }
     static void tea(){
         System.out.println("Boil water tea leaves and sugar");
@@ -347,6 +355,16 @@ public class Main {
     static String[] heroes(){
         String[] superheroes = {"Iron Man", "Bat Man", "Thor"};
         return superheroes;
+    }
+
+    static int add(int a, int b){
+        System.out.println("Integer arithematic operations: ");
+        return a+b;
+    }
+
+    static String add(String a, String b){
+        System.out.println("String arithametic operations: ");
+        return a+b;
     }
 }
 
