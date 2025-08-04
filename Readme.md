@@ -769,3 +769,42 @@ public class MethodOverloading {
     }
 }
 ```
+
+# Call Stack in Java
+
+This project demonstrates the concept of the call stack in Java, which is used to keep track of method calls during program execution. Each method call creates a new stack frame on the call stack.
+
+## Code Overview
+
+The provided Java code includes three methods: `first()`, `second()`, and `third()`. Each method declares a local variable `x` and prints its value, then calls the next method in sequence. The call stack manages the order of method execution, pushing a new frame for each method call and popping it when the method completes.
+
+## Code Snippet
+
+```java
+/*
+ * The call stack is what a program uses to keep track of method calls. The call stack is made up of stack
+ * frames—one for each method call.
+ */
+public class CallStackDemo {
+    public static void main(String[] args) {
+        first();
+    }
+
+    static void first() {
+        int x = 0;
+        System.out.println("Within first function " + x);
+        second();
+    }
+
+    static void second() {
+        int x = 10;
+        System.out.println("Within second function " + x);
+        third();
+    }
+
+    static void third() {
+        int x = 30;
+        System.out.println("Within third function " + x);
+    }
+}
+```

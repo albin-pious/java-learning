@@ -332,6 +332,13 @@ public class Main {
          */
         add(30,49);
         add("I'm ", "Batman");
+
+//        Call Stack
+        /*
+            The call stack is what a program uses to keep track of method calls. The call stack is made up of stack
+            -one for each method call.
+         */
+        first();
     }
     static void tea(){
         System.out.println("Boil water tea leaves and sugar");
@@ -365,6 +372,23 @@ public class Main {
     static String add(String a, String b){
         System.out.println("String arithametic operations: ");
         return a+b;
+    }
+
+    static void first(){
+        int x = 0;
+        System.out.println("Within first function "+x);
+        second();
+    }
+
+    static void second(){
+        int x = 10;
+        System.out.println("Within second function "+x);
+        third();
+    }
+
+    static void third(){
+        int x = 30;
+        System.out.println("Within third function "+x);
     }
 }
 
