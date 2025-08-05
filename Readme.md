@@ -808,3 +808,21 @@ public class CallStackDemo {
     }
 }
 ```
+# Variable Scope in Java
+
+This project explains the concept of variable scope in Java, which defines the region of a program where a variable is accessible.
+
+## Overview
+
+The provided comment describes two main types of variable scope in Java:
+- **Class-Level Scope**: Variables declared at the class level (e.g., instance or static variables), which will be covered in the Object-Oriented Programming (OOPS) section.
+- **Block-Level Scope**: Variables declared within a block (e.g., inside curly braces `{}` like in methods, loops, or conditionals), accessible only within that block.
+
+No executable code is provided in this example, as it focuses on explaining the concept of variable scope.
+
+## Purpose
+
+This note serves as an educational resource for beginners to understand:
+- The concept of variable scope in Java.
+- The distinction between class-level scope (to be explored in OOPS) and block-level scope.
+- How the accessibility of variables is determined by where they are declared in a program.

@@ -339,6 +339,14 @@ public class Main {
             -one for each method call.
          */
         first();
+
+//        Scope of Variable
+        /*
+            The scope of a variable is the region of the program where it is accessible.
+            There are two types of scope levels in Java
+            - Class level scope (covered later on in OOPS section)
+            - Block level scope.
+         */
     }
     static void tea(){
         System.out.println("Boil water tea leaves and sugar");
