@@ -347,6 +347,20 @@ public class Main {
             - Class level scope (covered later on in OOPS section)
             - Block level scope.
          */
+
+//        Variable Arguments - varargs
+        /*
+            In Java, an argument of a method can accept arbitrary number of values. This argument that can accept
+            variable number of values is called varargs.
+            Syntax:
+                return type methodName(dataType... args) {
+                  body
+                }
+
+         */
+
+        float avg1 = getAvg(2,3,44,90,4,51);
+        float avg2 = getAvg(3,44,2);
     }
     static void tea(){
         System.out.println("Boil water tea leaves and sugar");
@@ -397,6 +411,16 @@ public class Main {
     static void third(){
         int x = 30;
         System.out.println("Within third function "+x);
+    }
+
+    static  float getAvg(float... varargs){
+        float total = 0;
+
+        for (float num: varargs){
+            total += num;
+        }
+
+        return total / varargs.length;
     }
 }
 

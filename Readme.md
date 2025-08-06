@@ -826,3 +826,40 @@ This note serves as an educational resource for beginners to understand:
 - The concept of variable scope in Java.
 - The distinction between class-level scope (to be explored in OOPS) and block-level scope.
 - How the accessibility of variables is determined by where they are declared in a program.
+
+# Variable Arguments (Varargs) in Java
+
+This project demonstrates the use of variable arguments (varargs) in Java, which allows a method to accept an arbitrary number of arguments of a specified type.
+
+## Code Overview
+
+The provided Java code defines a method `getAvg` that uses varargs to accept a variable number of `float` values, calculates their average, and returns it. The varargs parameter is treated as an array within the method, enabling iteration over the input values.
+
+## Code Snippet
+
+```java
+/*
+ * In Java, an argument of a method can accept an arbitrary number of values. This argument that can accept
+ * variable number of values is called varargs.
+ * Syntax:
+ *     return type methodName(dataType... args) {
+ *         body
+ *     }
+ */
+public class VarargsDemo {
+    public static void main(String[] args) {
+        float avg1 = getAvg(2, 3, 44, 90, 4, 51);
+        float avg2 = getAvg(3, 44, 2);
+        System.out.println("Average 1: " + avg1);
+        System.out.println("Average 2: " + avg2);
+    }
+
+    static float getAvg(float... varargs) {
+        float total = 0;
+        for (float num : varargs) {
+            total += num;
+        }
+        return total / varargs.length;
+    }
+}
+```
