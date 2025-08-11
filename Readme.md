@@ -863,3 +863,40 @@ public class VarargsDemo {
     }
 }
 ```
+
+# 2D Arrays in Java
+
+This project demonstrates the basics of 2D arrays in Java, which are arrays of arrays used to represent matrices or grids.
+
+## Code Overview
+
+The provided Java code shows two ways to work with 2D arrays:
+- **Direct Initialization**: A 2D array `well2` is initialized with predefined values, and a specific element is accessed using row and column indices.
+- **Dynamic Creation**: A 2D array `arr2d` is created with specified dimensions (rows and columns), and a value is assigned to a specific element.
+
+## Code Snippet
+
+```java
+/*
+ * Java 2D Arrays are simply arrays of arrays.
+ * Each element in an array is itself an array.
+ * These can be used to store matrices or grids.
+ */
+public class TwoDArraysDemo {
+    public static void main(String[] args) {
+        // Direct initialization of 2D array
+        int[][] well2 = {
+                {6, 3, 5},
+                {3, -2, 0}
+        };
+        System.out.println(well2[0][1]); // Output: 3
+
+        // Create 2D array dynamically
+        int rows = 3;
+        int cols = 4;
+        int[][] arr2d = new int[rows][cols];
+        arr2d[1][2] = 20;
+        System.out.println(arr2d[1][2]); // Output: 20
+    }
+}
+```

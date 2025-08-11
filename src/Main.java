@@ -361,6 +361,25 @@ public class Main {
 
         float avg1 = getAvg(2,3,44,90,4,51);
         float avg2 = getAvg(3,44,2);
+
+//        2D Arrays - Introduction
+        /*
+         * Java 2D Arrays are simply arrays or arrays.
+         * Each element in an array itself.
+         * These can be used to store matrices or grids.
+         */
+        int [][] well2 = {
+                {6,3,5},
+                {3,-2,0}
+        };
+        System.out.println(well2[0][1]);
+        //    Create 2D arrays
+        int rows = 3;
+        int cols = 4;
+        int[][] arr2d = new int[rows][cols];
+        arr2d[1][2] = 20;
+
+        System.out.println(arr2d[1][2]);
     }
     static void tea(){
         System.out.println("Boil water tea leaves and sugar");
@@ -422,6 +441,8 @@ public class Main {
 
         return total / varargs.length;
     }
+
+
 }
 
 //Here Our code is wrapped under a class
