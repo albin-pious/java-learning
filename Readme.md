@@ -900,3 +900,37 @@ public class TwoDArraysDemo {
     }
 }
 ```
+# Iterating Over 2D Arrays in Java
+
+This project demonstrates how to iterate over a 2D array in Java using nested loops to access each element in a matrix or grid.
+
+## Code Overview
+
+The provided Java code uses nested `for` loops to iterate over a 2D array `arr2dd`. The outer loop iterates over the rows, and the inner loop iterates over the columns. However, the code contains an error: it uses `arr2dd.length` for the inner loop bound, which assumes all rows have the same length as the number of rows, and references an undefined variable `x` instead of `z`. A corrected version is provided below to ensure proper iteration over the columns of each row.
+
+## Code Snippet
+
+```java
+/*
+ * To iterate over 2D Arrays, we would be using nested loops.
+ * The outer loop will be used to iterate over the rows and the
+ * inner loop will be used to iterate over the columns.
+ */
+public class Iterate2DArray {
+    public static void main(String[] args) {
+        int arr2dd[][] = {
+                {2, 56, 3, -9, 44},
+                {33, 4, -50, 22},
+                {34, -8},
+                {22, 3, -7, 21}
+        };
+
+        // Corrected iteration over 2D array
+        for (int z = 0; z < arr2dd.length; z++) {
+            for (int y = 0; y < arr2dd[z].length; y++) { // Use arr2dd[z].length for column bound
+                System.out.println(arr2dd[z][y]);
+            }
+        }
+    }
+}
+```

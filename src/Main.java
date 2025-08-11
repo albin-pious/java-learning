@@ -380,6 +380,26 @@ public class Main {
         arr2d[1][2] = 20;
 
         System.out.println(arr2d[1][2]);
+
+//        Iterating over 2D Arrays
+        /*
+            To iterate over 2D Arrays, we would be using nested loops.
+            The outer loop will be used to iterate over the rows and the
+            inner loop will be used to iterate over the columns.
+         */
+
+        int arr2dd[][] = {
+                { 2, 56, 3, -9, 44},
+                { 33, 4, -50, 22},
+                {34, -8},
+                {22, 3,-7,21}
+        };
+
+        for(int z=0; z< arr2dd.length; z++){
+            for(int y=0; y< arr2dd.length; y++){
+                System.out.println(arr2dd[x][y]);
+            }
+        }
     }
     static void tea(){
         System.out.println("Boil water tea leaves and sugar");
